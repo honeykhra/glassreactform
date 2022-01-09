@@ -1,0 +1,41 @@
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+input {
+  margin: 10px 0px;
+  color: rebeccapurple;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+label {
+  font-size: 14;
+  color: rebeccapurple;
+  margin-left: 1.5rem;
+}
+
+span {
+  font-size: 12px;
+  padding: 3px;
+  color: #4C0027;
+  display: none;
+  margin-bottom: 5px;
+}
+input:invalid[focused="true"] {
+  border: 1px solid #4C0027;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}

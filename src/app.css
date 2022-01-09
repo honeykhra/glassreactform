@@ -1,0 +1,129 @@
+.app {
+  display: flex;
+  height: 100vh;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #f7f7fe, #dff1ff);
+}
+.colour {
+  position: absolute;
+  filter: blur(150px);
+}
+.colour:nth-child(1) {
+  top: -350px;
+  width: 600px;
+  height: 600px;
+  background: #bf4ad4;
+}
+.colour:nth-child(2) {
+  left: 100px;
+  width: 500px;
+  height: 500px;
+  bottom: -150px;
+  background: #ffa500;
+}
+.colour:nth-child(3) {
+  right: 100px;
+  bottom: 50px;
+  width: 300px;
+  height: 300px;
+  background: #2b67f3;
+}
+.box {
+  position: relative;
+}
+.box .square {
+  position: absolute;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.1);
+  animation-delay: calc(-1s * var(--i));
+  animation: animate 10s linear infinite;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+}
+.box .square:nth-child(1) {
+  top: -50px;
+  left: -60px;
+  width: 100px;
+  height: 100px;
+}
+.box .square:nth-child(2) {
+  z-index: 2;
+  top: 150px;
+  left: -108px;
+  width: 120px;
+  height: 120px;
+}
+.box .square:nth-child(3) {
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  right: -50px;
+  bottom: 240px;
+}
+.box .square:nth-child(4) {
+  right: -15px;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+}
+.box .square:nth-child(5) {
+  top: 80px;
+  left: 380px;
+  width: 60px;
+  height: 60px;
+}
+.container {
+  width: 400px;
+  display: flex;
+  min-height: 400px;
+  position: relative;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+h1 {
+  color: rgb(66, 3, 66);
+  text-align: center;
+  padding: 20px;
+}
+button {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
