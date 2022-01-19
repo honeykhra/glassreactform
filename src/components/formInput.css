@@ -33,7 +33,7 @@ span {
   margin-bottom: 5px;
 }
 input:invalid[focused="true"] {
-  border: 1px solid #4C0027;
+  border: 1px solid #55002c;
 }
 
 input:invalid[focused="true"] ~ span {
